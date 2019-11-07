@@ -32,7 +32,7 @@ export const Navbar = withRouter(connect(mapStateToProps,mapDispatchToProps,merg
             return <nav className="navbar navbar-expand-md navbar-light bg-light">
                 <div className="navbar navbar-brand">Menu</div>
                 <button className="navbar-toggler" type="button" 
-                    data-toggle="collapse" data-target="#navbarTogglerDemo02" 
+                    data-toggle="collapse" data-target="#navbarSupportedContent" 
                     aria-controls="navbarTogglerDemo02" aria-expanded="false" 
                         aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
