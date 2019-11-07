@@ -27,9 +27,8 @@ export class Login extends React.Component {
     }
 
     handleSubmit = () => {
-        console.log(this.formValid) ;
         if(this.formValid){
-            this.props.postData(this.state.formData , () => this.props.history.push('/home') ,
+            this.props.postData(this.state.formData , () => this.props.history.push('/home/1') ,
                         (err) => this.setState({serverErr : err})) ;
         }
     }
@@ -47,10 +46,7 @@ export class Login extends React.Component {
     }
 
     static getDerivedStateFromProps(props , state){
-        console.log(state) ;
-
         let fieldErr = validate(state.formData , state.rules) ;
-
         return {
             fieldErr : fieldErr 
         }
@@ -61,7 +57,6 @@ export class Login extends React.Component {
     </div> 
 
     render(){
-        console.log(this.props) ;
         return <div>
             <div>
                 <Navbar />
